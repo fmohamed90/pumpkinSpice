@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pumpkin Spice Latte</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to bottom right,
+          rgb(240, 213, 182),
+          orange
+        );
+      }
+      h1 {
+        margin: 0 auto;
+        padding: 20px 10px;
+        text-align: center;
+        max-width: 900px;
+        border-radius: 5px;
+        line-height: 65px;
+        background-color: rgba(173, 69, 0, 0.712);
+        font-size: 70px;
+        font-family: fantasy, cursive;
+        color: cornsilk;
+      }
+      h2 {
+        text-align: center;
+        text-decoration-line: underline;
+        font-size: 45px;
+        margin: 2pc auto;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: cornsilk;
+        text-shadow: 4px 4px rgb(173, 69, 0);
+      }
+      .perfect {
+        color: rgb(252, 182, 135);
+        font-style: italic;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 15pc;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+        font-family: fantasy;
+        line-height: 50px;
+        padding: 20px;
+      }
+      p:hover {
+        transition: all 1s ease-in-out;
+        background-color: rgba(255, 248, 220, 0.514);
+        border-radius: 1pc;
+      }
+      .learn-recipe {
+        display: block;
+        color: rgb(173, 69, 0);
+        text-decoration: none;
+        margin-top: 5px;
+      }
+      .learn-recipe:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgb(173, 69, 0);
+        color: cornsilk;
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.575);
+      }
+      button:hover {
+        background-color: cornsilk;
+        color: rgb(173, 69, 0);
+        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=33826), auto !important;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      hr {
+        background: cornsilk;
+        padding: 0.15pc;
+        margin-top: 5pc;
+      }
+      .bottom {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .name {
+        color: cornsilk;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pumpkin Spice Latte</h1>
+      <h2>The <span class="perfect"> perfect </span>drink for <em>Fall</em></h2>
+
+      <img
+        src="https://d1uz88p17r663j.cloudfront.net/resized/66a50206d704754c115305a2247070ee_bak---21---libby_s-pumpkin-spice-latte-1562-edit_448_448.jpg"
+      />
+      <p>
+        The <strong>Pumpkin Spice Latte</strong> is a coffee drink made with a
+        mix of traditional fall spice flavors (cinnamon, nutmeg, and clove),
+        steamed milk, espresso, and often sugar, topped with whipped cream and
+        pumpkin pie spice. The beverage is most commonly associated with
+        Starbucks, which first offered the drink in 2003. The popular flavor has
+        inspired a wide range of product variations that appear on a seasonal
+        basis.
+        <br />
+        <a
+          href="https://www.inspiredtaste.net/8419/pumpkin-spice-latte-at-home-recipe/"
+          target="_blank"
+          class="learn-recipe"
+        >
+          Learn the recipe!</a
+        >
+      </p>
+      <button class="order-button">Order A Pumpkin Spice Latte</button>
+      <hr />
+      <p class="bottom">
+        This page was built by <span class="name"> Fatima Mohamed</span>
+      </p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let season = prompt("What is your favorite season?");
+        season = season.toLowerCase();
+        if (season === "fall" || season === "autumn") {
+          alert(name + ", " + "You can have a pumpkin spice latte! 😊");
+        } else {
+          alert(name + ", " + "You cannot have pumpkin spice latte! 😔");
+        }
+      }
+      let orderButton = document.querySelector(".order-button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
